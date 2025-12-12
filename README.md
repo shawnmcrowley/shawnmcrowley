@@ -14,7 +14,7 @@
 
 ---
 
-## 🧠 My Thought Leadership and Arts of the Possible
+## 🧠 My Thought Leadership and Vision
 
 ### 🤖 **Agentic AI Systems**
 Building autonomous AI agents that can reason, plan, and execute complex workflows. Currently exploring:
@@ -90,11 +90,12 @@ Cross Platform: ["PWA", "Native Apps"]
 - Real-time reasoning and planning  
 - Enterprise-grade security
 - Scalable cloud deployment
+- Next.js Frontend with both Server/Action Components and API's
 ```
 **Tech Stack:** n8n, Ollama, Snowflake, Docker
 
 ### **☁️ Cloud Data Platform**
-> Real-time analytics platform processing billions of events daily
+> Real-time analytics platform 
 ```
 🚀 Highlights:
 - Serverless data ingestion pipeline
@@ -102,7 +103,7 @@ Cross Platform: ["PWA", "Native Apps"]
 - AI-powered anomaly detection
 - Cost-optimized architecture
 ```
-**Tech Stack:** AWS Kinesis, Snowflake, dbt, Terraform, React
+**Tech Stack:** Snowflake, Cortex, SchemaManager, Streamlit
 
 ### **🔄 Intelligent Workflow Engine**
 > n8n-powered automation with AI decision making
