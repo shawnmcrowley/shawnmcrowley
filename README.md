@@ -129,7 +129,7 @@ Cross Platform: ["PWA", "Native Apps"]
 ### 📫 Get in Touch
 
 [![Website](https://img.shields.io/badge/Website-Visit-black?style=for-the-badge&logo=google-chrome)](https://shawnmcrowley.github.io)
-[![Blog](https://img.shields.io/badge/Blog-Read-orange?style=for-the-badge&logo=medium)](https://shawnmcrowley/github.io)
+[![Blog](https://img.shields.io/badge/Blog-Read-orange?style=for-the-badge&logo=medium)](https://shawnmcrowley.github.io)
 [![Portfolio](https://img.shields.io/badge/Portfolio-View-green?style=for-the-badge&logo=github)](https://shawwnmcrowley.github.io)
 
 *"Building the future, one intelligent system at a time."*
