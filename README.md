@@ -6,36 +6,33 @@
 
 *Building intelligent systems that scale seamlessly across clouds and data platforms*
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/yourprofile)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/yourhandle)
-[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail)](mailto:your.email@domain.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/shawnmcrowley)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/shawnmcrowley)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail)](mailto:shawnmcrowley@gmail.com)
 
 </div>
 
 ---
 
-## 🧠 What I'm Passionate About
+## 🧠 My Thought Leadership and Arts of the Possible
 
 ### 🤖 **Agentic AI Systems**
 Building autonomous AI agents that can reason, plan, and execute complex workflows. Currently exploring:
-- **Multi-agent orchestration** with frameworks like LangGraph, CrewAI
-- **Reasoning engines** for complex problem-solving
-- **AI-powered workflow automation** (n8n, Temporal)
+- **AI-powered workflow automation** (n8n, Langflow)
 - **RAG systems** with advanced retrieval and contextual reasoning
 
 ### ☁️ **Cloud-Native Application Development**
 Creating scalable, resilient applications using modern cloud patterns:
-- **Serverless architectures** on AWS (Lambda, Step Functions, EventBridge)
-- **Container orchestration** (Docker, Kubernetes, ECS)
+- **Serverless architectures**  (Lambda and Azure Functions)
+- **Container orchestration** (Docker, Kubernetes, ECS, ECR, GitHub Container Registry)
 - **Microservices** with event-driven design
 - **Infrastructure as Code** (Terraform, CDK, CloudFormation)
 
 ### 📊 **Data Engineering & Analytics**
 Leveraging Snowflake and modern data stacks for insights:
 - **Snowflake data modeling** and optimization
-- **Data pipeline orchestration** (dbt, Airflow, Prefect)
+- **Data pipeline orchestration** (Tasks, Streams, Procedures)
 - **Real-time analytics** and streaming architectures
-- **MLOps pipelines** for model training and deployment
 
 ---
 
@@ -43,8 +40,8 @@ Leveraging Snowflake and modern data stacks for insights:
 
 ### **AI & Machine Learning**
 ```
-AI_Frameworks = ["LangChain", "LlamaIndex", "OpenAI", "Anthropic"]
-Vector_DBs = ["Pinecone", "Chroma", "Weaviate"]
+AI_Frameworks = ["LangChain", "Ollama", "OpenAI", "Anthropic"]
+Vector_DBs = ["PostgresVector", "Chroma"]
 ML_Ops = ["MLflow", "Kubeflow", "Weights & Biases"]
 ```
 
@@ -54,11 +51,10 @@ AWS_Services:
   - Compute: "Lambda, ECS, EC2, Fargate"
   - Storage: "S3, RDS, DynamoDB, Elasticache"
   - Analytics: "Glue, Athena, Redshift, QuickSight"
-  - AI/ML: "Bedrock, SageMaker, Comprehend"
-
+  
 DevOps_Tools:
   - IaC: "Terraform, AWS CDK, CloudFormation"
-  - CI/CD: "GitHub Actions, AWS CodePipeline, Jenkins"
+  - CI/CD: "GitHub Actions, AWS CodePipeline, Azure Pipelines"
   - Monitoring: "CloudWatch, Datadog, Prometheus"
   - Containerization: "Docker, Kubernetes, Helm"
 ```
@@ -69,19 +65,17 @@ SNOWFLAKE_EXPERTISE:
   - Data Modeling: "Star Schema, Data Vault 2.0"
   - Performance: "Clustering, Materialized Views"
   - Security: "RBAC, Data Masking, Row Access Policies"
+  - Visualization:"Streamlit and Native Apps"
   
-DATA_TOOLS:
-  - Orchestration: "dbt, Airflow, Prefect"
-  - Streaming: "Kafka, Kinesis, Debezium"
-  - Visualization: "Tableau, Power BI, Metabase"
 ```
 
 ### **Application Development**
 ```
-Frontend: ["React", "Vue.js", "TypeScript", "Tailwind CSS"]
-Backend: ["Node.js", "Python", "FastAPI", "Express.js"]
+Frontend: ["React", "Next.js", "JavaScript", "Tailwind CSS"]
+Backend: ["Node.js","Express.js", "Next.js"]
 Databases: ["PostgreSQL", "MongoDB", "Redis", "Neo4j"]
 APIs: ["REST", "GraphQL", "gRPC", "WebSocket"]
+Cross Platform: ["PWA", "Native Apps"]
 ```
 
 ---
@@ -97,7 +91,7 @@ APIs: ["REST", "GraphQL", "gRPC", "WebSocket"]
 - Enterprise-grade security
 - Scalable cloud deployment
 ```
-**Tech Stack:** LangGraph, AWS Bedrock, Snowflake, FastAPI, Docker
+**Tech Stack:** n8n, Ollama, Snowflake, Docker
 
 ### **☁️ Cloud Data Platform**
 > Real-time analytics platform processing billions of events daily
@@ -125,40 +119,19 @@ APIs: ["REST", "GraphQL", "gRPC", "WebSocket"]
 ## 📚 Currently Learning & Exploring
 
 - **🎯 Advanced Agentic AI** - Multi-modal reasoning, long-context processing
-- **🔗 Blockchain Integration** - Smart contracts for AI agent verification
 - **🌪️ Snowflake Native Apps** - Building data applications directly in Snowflake
 - **⚡ Performance Optimization** - High-throughput AI inference systems
 
----
-
-## 🎯 2024 Focus Areas
-
-1. **Build** production-ready AI agent platforms
-2. **Scale** data-intensive applications on AWS + Snowflake
-3. **Open Source** contributions to AI/ML and data engineering tools
-4. **Mentor** upcoming developers in cloud-native technologies
-
----
-
-## 🤝 Let's Collaborate!
-
-I'm always excited to work on innovative projects involving:
-- **AI Agent Development** and research
-- **Cloud Architecture** design and optimization
-- **Data Platform** engineering and analytics
-- **Open Source** contributions in DevOps/AI spaces
 
 <div align="center">
 
 ### 📫 Get in Touch
 
-[![Website](https://img.shields.io/badge/Website-Visit-black?style=for-the-badge&logo=google-chrome)](https://yourwebsite.com)
-[![Blog](https://img.shields.io/badge/Blog-Read-orange?style=for-the-badge&logo=medium)](https://yourblog.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-View-green?style=for-the-badge&logo=github)](https://github.com/yourusername/portfolio)
+[![Website](https://img.shields.io/badge/Website-Visit-black?style=for-the-badge&logo=google-chrome)](https://shawnmcrowley.github.io)
+[![Blog](https://img.shields.io/badge/Blog-Read-orange?style=for-the-badge&logo=medium)](https://shawnmcrowley/github.io)
+[![Portfolio](https://img.shields.io/badge/Portfolio-View-green?style=for-the-badge&logo=github)](https://shawwnmcrowley.github.io)
 
 *"Building the future, one intelligent system at a time."*
-
-⭐ *If you find my work interesting, don't forget to star some repos!*
 
 </div>
 
