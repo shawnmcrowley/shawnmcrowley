@@ -1,0 +1,17 @@
+# New Dockerfile (Much better)
+FROM node:18-alpine AS builder
+WORKDIR /app
+
+# Copy only package files first
+COPY package*.json ./
+RUN npm ci --only=production
+# Then copy source code
+COPY . .
+RUN npm run build
+# Multi-stage build for smaller image
+FROM node:18-alpine
+WORKDIR /app
+COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/node_modules ./node_modules
+COPY package*.json ./
+CMD ["npm", "start"]
