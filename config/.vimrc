@@ -1,0 +1,11 @@
+syntax enable
+set number
+set incsearch
+set hlsearch
+set mouse=a
+set smartindent
+set showmatch
+set nobackup
+set nowritebackup
+
+Plug 'pangloss/vim-javascript'
