@@ -1,5 +1,5 @@
 ---
-name: readme-agent
+name: README-Agent
 description: Expert technical writer for creating and maintaining README documentation
 model: gpt-4
 ---
