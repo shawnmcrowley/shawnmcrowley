@@ -39,44 +39,45 @@ Leveraging Snowflake and modern data stacks for insights:
 ## 🛠️ Technical Toolkit
 
 ### **AI & Machine Learning**
-```
-AI_Frameworks = ["LangChain", "Ollama", "OpenAI", "Anthropic"]
-Vector_DBs = ["PostgresVector", "Chroma"]
-ML_Ops = ["MLflow", "Kubeflow", "Weights & Biases"]
-```
+
+AI_Frameworks = LangChain, Ollama, OpenAI, Anthropic
+Vector_DBs = PostgresVector, Chroma
+ML_Ops = MLflow, Kubeflow, Weights & Biases
+
 
 ### **Cloud & DevOps**
-```yaml
+
 AWS_Services:
-  - Compute: "Lambda, ECS, EC2, Fargate"
-  - Storage: "S3, RDS, DynamoDB, Elasticache"
-  - Analytics: "Glue, Athena, Redshift, QuickSight"
+  - Compute: Lambda, ECS, EC2, Fargate
+  - Storage: S3, RDS, DynamoDB, Elasticache
+  - Analytics: Glue, Athena, Redshift, QuickSight
   
 DevOps_Tools:
-  - IaC: "Terraform, AWS CDK, CloudFormation"
-  - CI/CD: "GitHub Actions, AWS CodePipeline, Azure Pipelines"
-  - Monitoring: "CloudWatch, Datadog, Prometheus"
-  - Containerization: "Docker, Kubernetes, Helm"
-```
+  - IaC: Terraform, AWS CDK, CloudFormation
+  - CI/CD: GitHub Actions, AWS CodePipeline, Azure Pipelines
+  - Monitoring: CloudWatch, Datadog, Prometheus
+  - Containerization: Docker, Kubernetes, Helm
+
 
 ### **Data & Analytics**
-```sql
+
 SNOWFLAKE_EXPERTISE:
-  - Data Modeling: "Star Schema, Data Vault 2.0"
-  - Performance: "Clustering, Materialized Views"
-  - Security: "RBAC, Data Masking, Row Access Policies"
-  - Visualization:"Streamlit and Native Apps"
+  - Data Modeling: Star Schema, Data Vault 2.0, LakeHouse
+  - Performance: Clustering, Materialized Views
+  - Security: RBAC, Data Masking, Row Access Policies
+  - Visualization:Streamlit and Native Apps
+  - Data PipeLines and CI/CD: Streams, Procedures, S3 Integration, OpenAI/Cortex Integration, AzureDevOps/GitHub
   
-```
+
 
 ### **Application Development**
-```
-Frontend: ["React", "Next.js", "JavaScript", "Tailwind CSS"]
-Backend: ["Node.js","Express.js", "Next.js"]
-Databases: ["PostgreSQL", "MongoDB", "Redis", "Neo4j"]
-APIs: ["REST", "GraphQL", "gRPC", "WebSocket"]
-Cross Platform: ["PWA", "Native Apps"]
-```
+
+  - Frontend: React, Next.js, JavaScript, Tailwind CSS
+  - Backend: Node.js,Express.js, Next.js
+  - Databases: Oracle,,MySQL,PostgreSQL, MongoDB, Redis, Neo4j
+  - APIs: REST, GraphQL, gRPC, WebSocket
+  - Cross Platform: PWA, Native Apps, Chrome Browser Extensions
+
 
 ---
 
@@ -84,36 +85,36 @@ Cross Platform: ["PWA", "Native Apps"]
 
 ### **🤖 Autonomous AI Agent Platform**
 > Multi-agent system for complex business process automation
-```
+
 ✨ Features:
 - Dynamic agent orchestration
 - Real-time reasoning and planning  
 - Enterprise-grade security
 - Scalable cloud deployment
 - Next.js Frontend with both Server/Action Components and API's
-```
+
 **Tech Stack:** n8n, Ollama, Snowflake, Docker
 
 ### **☁️ Cloud Data Platform**
 > Real-time analytics platform 
-```
+
 🚀 Highlights:
 - Serverless data ingestion pipeline
 - Real-time Snowflake transformations
 - AI-powered anomaly detection
 - Cost-optimized architecture
-```
+
 **Tech Stack:** Snowflake, Cortex, SchemaManager, Streamlit
 
 ### **🔄 Intelligent Workflow Engine**
 > n8n-powered automation with AI decision making
-```
+
 🎯 Capabilities:
 - AI-driven workflow optimization
 - Multi-cloud deployment
 - Advanced error handling
 - Comprehensive monitoring
-```
+
 **Tech Stack:** n8n, Ollama, PostgreSQL, Redis, AWS ECS
 
 ---
@@ -128,7 +129,7 @@ Cross Platform: ["PWA", "Native Apps"]
 
 ### 📫 Get in Touch
 
-[![Website](https://img.shields.io/badge/Website-Visit-black?style=for-the-badge&logo=google-chrome)](https://shawnmcrowley.github.io)
+![Website](https://img.shields.io/badge/Website-Visit-black?style=for-the-badge&logo=google-chrome)](https://shawnmcrowley.github.io)
 [![Blog](https://img.shields.io/badge/Blog-Read-orange?style=for-the-badge&logo=medium)](https://shawnmcrowley.github.io)
 [![Portfolio](https://img.shields.io/badge/Portfolio-View-green?style=for-the-badge&logo=github)](https://shawwnmcrowley.github.io)
 
