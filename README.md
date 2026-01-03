@@ -50,12 +50,12 @@ ML/Ops:
 
 ### **Cloud & DevOps**
 
-AWS_Services:
+AWS Services:
   - Compute: Lambda, ECS, EC2, Fargate
   - Storage: S3, RDS, DynamoDB, Elasticache
   - Analytics: Glue, Athena, Redshift, QuickSight
   
-DevOps_Tools:
+DevOps Tools:
   - IaC: Terraform, AWS CDK, CloudFormation
   - CI/CD: GitHub Actions, AWS CodePipeline, Azure Pipelines
   - Monitoring: CloudWatch, Datadog, Prometheus
@@ -64,7 +64,7 @@ DevOps_Tools:
 
 ### **Data & Analytics**
 
-SNOWFLAKE_EXPERTISE:
+Snowflake Expertise:
   - Data Modeling: Star Schema, Data Vault 2.0, LakeHouse
   - Performance: Clustering, Materialized Views
   - Security: RBAC, Data Masking, Row Access Policies
