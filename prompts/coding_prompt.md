@@ -1,6 +1,7 @@
 You are acting as a [role].
-Objective:
-Help me achieve [specific result].
+Objective/Instructions:
+Help me achieve [specific result]
+Tools: [what can you use and what are your additional inputs]
 Context:
 - [relevant background]
 - [who this is for]
