@@ -30,9 +30,9 @@ Creating scalable, resilient applications using modern cloud patterns:
 
 ### 📊 **Data Engineering & Analytics**
 Leveraging Snowflake and modern data stacks for insights:
-- **Snowflake data modeling** and optimization
-- **Data pipeline orchestration** (Tasks, Streams, Procedures)
-- **Real-time analytics** and streaming architectures
+- **Snowflake data modeling and optimization**
+- **Data pipeline orchestration - (Tasks, Streams, Procedures)**
+- **Real-time analytics and streaming architectures**
 
 ---
 
@@ -40,11 +40,11 @@ Leveraging Snowflake and modern data stacks for insights:
 
 ### **AI & Machine Learning**
 
-AI_Frameworks:
+AI Frameworks:
   - LangChain, Ollama, OpenAI, Anthropic
-Vector_DBs:
+Vector DBs:
   - PostgresVector, Chroma
-ML_Ops: 
+ML/Ops: 
   - MLflow, Kubeflow, Weights & Biases
 
 
@@ -69,9 +69,8 @@ SNOWFLAKE_EXPERTISE:
   - Performance: Clustering, Materialized Views
   - Security: RBAC, Data Masking, Row Access Policies
   - Visualization:Streamlit and Native Apps
-  - Data PipeLines and CI/CD: Streams, Procedures, S3 Integration, OpenAI/Cortex Integration, AzureDevOps/GitHub
+  - Data PipeLines and CI/CD: Streams, Procedures, AWS S3 Integration, OpenAI/Cortex Integration, Azure DevOps/GitHub
   
-
 
 ### **Application Development**
 
