@@ -25,14 +25,14 @@ Building autonomous AI agents that can reason, plan, and execute complex workflo
 Creating scalable, resilient applications using modern cloud patterns:
 - **Serverless architectures**  (Lambda and Azure Functions)
 - **Container orchestration** (Docker, Kubernetes, ECS, ECR, GitHub Container Registry)
-- **Microservices** with event-driven design
+- **Microservices** (Kafka, MCP)
 - **Infrastructure as Code** (Terraform, CDK, CloudFormation)
 
 ### 📊 **Data Engineering & Analytics**
 Leveraging Snowflake and modern data stacks for insights:
-- **Snowflake data modeling and optimization**
-- **Data pipeline orchestration - (Tasks, Streams, Procedures)**
-- **Real-time analytics and streaming architectures**
+- **Snowflake data modeling** (LakeHouse, Medallion Architectures)
+- **Data pipeline orchestration** (Tasks, Streams, Procedures)
+- **Real-time analytics** (Steamlit, Cortex Analyst, Cortex Search)
 
 ---
 
