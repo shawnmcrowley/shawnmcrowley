@@ -76,7 +76,7 @@ SNOWFLAKE_EXPERTISE:
 
   - Frontend: React, Next.js, JavaScript, Tailwind CSS
   - Backend: Node.js,Express.js, Next.js
-  - Databases: Oracle,,MySQL,PostgreSQL, MongoDB, Redis, Neo4j
+  - Databases: Oracle,MySQL,PostgreSQL, MongoDB, Redis, Neo4j
   - APIs: REST, GraphQL, gRPC, WebSocket
   - Cross Platform: PWA, Native Apps, Chrome Browser Extensions
 
