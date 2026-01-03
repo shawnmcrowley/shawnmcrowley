@@ -2,7 +2,7 @@
 
 # 🚀 Shawn M.Crowley's GitHub Home
 
-**Technology Executive | Chief Technologist | Application Developer & Architect | AI Architect | Cloud Native Engineer**
+**Chief Technologist | Technology Executive | Enterprise Architect | Software and System Developer | AI Architect | Cloud Native Engineer**
 
 *Building intelligent systems that scale seamlessly across clouds and data platforms*
 
@@ -40,9 +40,12 @@ Leveraging Snowflake and modern data stacks for insights:
 
 ### **AI & Machine Learning**
 
-AI_Frameworks = LangChain, Ollama, OpenAI, Anthropic
-Vector_DBs = PostgresVector, Chroma
-ML_Ops = MLflow, Kubeflow, Weights & Biases
+AI_Frameworks:
+  - LangChain, Ollama, OpenAI, Anthropic
+Vector_DBs:
+  - PostgresVector, Chroma
+ML_Ops: 
+  - MLflow, Kubeflow, Weights & Biases
 
 
 ### **Cloud & DevOps**
@@ -129,7 +132,7 @@ SNOWFLAKE_EXPERTISE:
 
 ### 📫 Get in Touch
 
-![Website](https://img.shields.io/badge/Website-Visit-black?style=for-the-badge&logo=google-chrome)](https://shawnmcrowley.github.io)
+[![Website](https://img.shields.io/badge/Website-Visit-black?style=for-the-badge&logo=google-chrome)](https://shawnmcrowley.github.io)
 [![Blog](https://img.shields.io/badge/Blog-Read-orange?style=for-the-badge&logo=medium)](https://shawnmcrowley.github.io)
 [![Portfolio](https://img.shields.io/badge/Portfolio-View-green?style=for-the-badge&logo=github)](https://shawwnmcrowley.github.io)
 
