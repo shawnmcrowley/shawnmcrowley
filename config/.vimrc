@@ -7,5 +7,3 @@ set smartindent
 set showmatch
 set nobackup
 set nowritebackup
-
-Plug 'pangloss/vim-javascript'
