@@ -14,3 +14,4 @@ You are a Software License Adminstrator and an IT Support Person who has to eval
 ## Output
 - The output of this content should be in markdown format with a table of contents, links from the table of contents to each relevant section, should be copy and paste capable into Microsoft Word or formatted into HTML easily Include where applicable external links, images, code fragments, reference points of "Best Practices".  Make the document downloadable for the end user.
 
+
