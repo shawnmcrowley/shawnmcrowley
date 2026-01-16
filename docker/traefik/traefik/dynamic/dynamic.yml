@@ -1,0 +1,65 @@
+http:
+  routers:
+    dashboard-http:
+      entryPoints:
+        - web
+      rule: "PathPrefix(`/api`) || PathPrefix(`/dashboard`)"
+      service: api@internal
+
+    main-app:
+      entryPoints:
+        - websecure
+      rule: "Host(`localhost`) && PathPrefix(`/`)"
+      service: main-app-service
+      tls: true
+      priority: 1
+
+    responsive-forms:
+      entryPoints:
+        - websecure
+      rule: "Host(`localhost`) && PathPrefix(`/responsive_forms`)"
+      service: responsive-forms-service
+      tls: true
+      priority: 10
+
+    document-processing:
+      entryPoints:
+        - websecure
+      rule: "Host(`localhost`) && PathPrefix(`/document_processing`)"
+      service: document-processing-service
+      tls: true
+      priority: 10
+
+    workflow-automation:
+      entryPoints:
+        - websecure
+      rule: "Host(`localhost`) && PathPrefix(`/workflow_automation`)"
+      service: workflow-automation-service
+      tls: true
+      priority: 10
+
+  services:
+    main-app-service:
+      loadBalancer:
+        servers:
+          - url: "http://172.17.0.1:3000"
+
+    responsive-forms-service:
+      loadBalancer:
+        servers:
+          - url: "http://172.17.0.1:3001"
+
+    document-processing-service:
+      loadBalancer:
+        servers:
+          - url: "http://172.17.0.1:3002"
+
+    workflow-automation-service:
+      loadBalancer:
+        servers:
+          - url: "http://172.17.0.1:3003"
+
+tls:
+  certificates:
+    - certFile: /certs/localhost.pem
+      keyFile: /certs/localhost-key.pem

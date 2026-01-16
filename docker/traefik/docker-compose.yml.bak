@@ -1,0 +1,26 @@
+
+networks:
+  traefik-public:
+    external: true  # Set to false so docker-compose creates it if it doesn't exist
+
+services:
+  traefik:
+    image: traefik:latest
+    container_name: traefik
+    command:
+      # Load static configuration from file
+      - "--configFile=/etc/traefik/traefik.yml"
+    ports:
+      - "80:80"          # HTTP
+      - "443:443"        # HTTPS
+      - "8888:8080"      # Dashboard
+    volumes:
+      # Static configuration
+      - ./traefik/traefik.yml:/etc/traefik/traefik.yml:ro
+      # Dynamic configuration directory
+      - ./traefik/dynamic:/etc/traefik/dynamic:ro
+      # SSL certificates
+      - ./traefik/certs:/certs:ro
+    networks:
+      - traefik-public
+    restart: unless-stopped

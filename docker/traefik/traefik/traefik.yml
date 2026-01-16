@@ -1,0 +1,48 @@
+# -------------------------------------------------
+# Traefik Static Configuration
+# -------------------------------------------------
+
+# Entry Points
+entryPoints:
+  web:
+    address: ":80"
+    # Redirect all HTTP to HTTPS
+    http:
+      redirections:
+        entryPoint:
+          to: websecure
+          scheme: https
+          permanent: true
+
+  websecure:
+    address: ":443"
+
+# Providers
+providers:
+  file:
+    directory: /etc/traefik/dynamic
+    watch: true
+
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+    network: integration_network
+    exposedByDefault: false
+    watch: true
+
+# API and Dashboard; Remove Hub Ads and API Demo Management
+api:
+  dashboard: true
+  disableDashboardAd: true
+  insecure: true
+
+# Logging
+log:
+  level: DEBUG
+
+# TLS Certificate Store
+tls:
+  stores:
+    default:
+      defaultCertificate:
+        certFile: /certs/localhost.pem
+        keyFile: /certs/localhost-key.pem
