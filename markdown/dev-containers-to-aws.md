@@ -24,6 +24,55 @@ Deploy to Amazon ECS (Elastic Container Service)
 
 ## Part 1: Setting Up Dev Container in VSCode
 
+### Quick Start: Enable Dev Container in VSCode UI
+
+1. **Install the Dev Containers extension**
+   - Open VSCode
+   - Go to Extensions (Ctrl+Shift+X)
+   - Search for "Dev Containers" by Microsoft
+   - Click Install
+
+2. **Create or open a project folder**
+   - Open VSCode
+   - File > Open Folder
+   - Select your project folder
+
+3. **Open Dev Container configuration**
+   - Press F1 or View > Command Palette
+   - Type "Dev Containers: Add Dev Container Configuration Files..."
+   - Select your project folder
+
+4. **Choose a base image**
+   - Select "From predefined configuration examples"
+   - Browse or search for your desired base image
+   - Example: Type "python:3.11" in the search bar
+   - Select "Python 3" or click "Show More Definitions" to see all available images
+   - Choose the specific image (e.g., "Python 3.11" or "Python 3.11 Slim")
+   - Optionally select additional features (e.g., Node.js, common utilities)
+   - Click OK
+
+5. **Review and customize configuration**
+   - VSCode will create `.devcontainer/devcontainer.json` and `.devcontainer/Dockerfile`
+   - Review the generated files and make any needed modifications
+
+6. **Open in Dev Container**
+   - Press F1 or View > Command Palette
+   - Type "Dev Containers: Reopen in Container"
+   - VSCode will build and start the container
+
+7. **Verify the container is running**
+   - The bottom-left corner should show "Dev Container: python:3.11" (or your chosen image)
+   - Open a terminal (Ctrl+`) - you're now inside the container
+   - Run `python --version` to verify Python 3.11 is installed
+
+**Alternative: Use Docker Compose instead of Dockerfile**
+
+If you prefer using Docker Compose:
+
+1. In the Dev Container configuration screen, select "Use Docker Compose"
+2. VSCode will create `docker-compose.yml` in the `.devcontainer` folder
+3. Configure your services in the docker-compose file
+
 ### For Next.js 16 Application
 
 **Directory Structure:**
