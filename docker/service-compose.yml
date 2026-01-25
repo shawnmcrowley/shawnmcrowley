@@ -72,7 +72,7 @@ services:
       - DB_POSTGRESDB_USER=${DB_POSTGRESDB_USER}
       - DB_POSTGRESDB_PASSWORD=${DB_POSTGRESDB_PASSWORD}
       - N8N_HOST=${N8N_HOST}
-      - N8N_PROTOCOL=${N8N_PROTOCOL}
+      - N8N_PROTOCOL=${N8N_PROTOCAL}
       - N8N_WEBHOOK_URL=${N8N_WEBHOOK_URL}
       - NODE_ENV=production
       - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}
@@ -83,8 +83,8 @@ services:
       - ./swagger-html:/swagger-html:rw
 
   postgres:
-    image: pgvector/pgvector:pg18-trixie
-    container_name: postgresdb18
+    image: ankane/pgvector
+    container_name: postgresdb
     restart: unless-stopped
     environment:
       - POSTGRES_USER=${DB_POSTGRESDB_USER}
@@ -95,7 +95,11 @@ services:
     networks:
       - integration_network
     volumes:
+<<<<<<< HEAD
       - pgvector-data:/var/lib/postgresql
+=======
+      - pgvector-data:/var/lib/postgresql/data
+>>>>>>> parent of 6d86471 (remove swagger-html)
 
   pgadmin:
     image: dpage/pgadmin4:latest
@@ -113,35 +117,17 @@ services:
     volumes:
       - pgadmin-data:/var/lib/pgadmin
 
-  portainer:
-    image: portainer/portainer-ce:lts
-    container_name: portainer
-    pull_policy: always
-    ports:
-      - "9000:9000"
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - portainer_data:/data
-    networks:
-      - integration_network
-    restart: always
-
 volumes:
   ollama-data:
-    name: ollama_ollama-data
-    external: true
   ollama-webui-data:
-    name: ollama_ollama-webui-data
-    external: true
   n8n-data:
+<<<<<<< HEAD
     name: n8n_n8n-data
     external: true
   pgvector-data:
     name: n8n_pgvector18-data
     external: true
+=======
+  pgvector-data:
+>>>>>>> parent of 6d86471 (remove swagger-html)
   pgadmin-data:
-    name: n8n_pgadmin-data
-    external: true
-  portainer_data:
-    name: portainer_portainer-data
-    external: true
