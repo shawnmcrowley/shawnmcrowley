@@ -96,7 +96,15 @@ services:
       - integration_network
     volumes:
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
       - pgvector-data:/var/lib/postgresql
+=======
+      - pgvector-data:/var/lib/postgresql/data
+>>>>>>> parent of 6d86471 (remove swagger-html)
+=======
+      - pgvector-data:/var/lib/postgresql
+>>>>>>> 9ebf5eafed21154a82d458e417c417e8cf0f137c
 =======
       - pgvector-data:/var/lib/postgresql/data
 >>>>>>> parent of 6d86471 (remove swagger-html)
@@ -122,11 +130,21 @@ volumes:
   ollama-webui-data:
   n8n-data:
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9ebf5eafed21154a82d458e417c417e8cf0f137c
     name: n8n_n8n-data
     external: true
   pgvector-data:
     name: n8n_pgvector18-data
     external: true
+<<<<<<< HEAD
+=======
+  pgvector-data:
+>>>>>>> parent of 6d86471 (remove swagger-html)
+=======
+>>>>>>> 9ebf5eafed21154a82d458e417c417e8cf0f137c
 =======
   pgvector-data:
 >>>>>>> parent of 6d86471 (remove swagger-html)
