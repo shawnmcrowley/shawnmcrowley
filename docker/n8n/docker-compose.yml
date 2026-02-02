@@ -21,6 +21,7 @@ services:
       - N8N_WEBHOOK_URL=${N8N_WEBHOOK_URL}
       - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}
       - N8N_RESTRICT_FILE_ACCESS_TO=/swagger-html  # Note - This is needed to write files in N8N 2.X
+      - N8N_DEFAULT_BINARY_DATA_MODE=filesystem
    
     networks:
       - integration_network
