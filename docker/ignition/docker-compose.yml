@@ -1,0 +1,16 @@
+# User Migration Example (Docker Compose)
+---
+services:
+  # Ignition Gateway
+  gateway:
+    image: inductiveautomation/ignition
+    volumes:
+      - ignition-data:/usr/local/bin/ignition/data
+    ports:
+      - 9088:8088
+      - 9043:8043
+    command: >
+      -n Ignition-Dashboard
+
+volumes:
+  ignition-data:

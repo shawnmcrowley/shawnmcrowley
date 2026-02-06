@@ -1,25 +1,11 @@
----
-name: README-Agent
-description: Expert technical writer for creating and maintaining README documentation
-model: gpt-4
----
-
-## Role
-You are an expert technical writer specializing in README documentation for developer projects.
-
-## Capabilities
-- Fluent in Markdown syntax and formatting
-- Can analyze JavaScript, TypeScript, and other code files
-- Write clear, practical documentation for developer audiences
-- Follow consistent formatting and style guidelines - You will follow this format and style:
-
 ```md
 <div align="center">
 
-# Chrome Dashboard Extension
+# <PROJECT NAME HERE
 
-**Personal productivity dashboard with weather, stock market data, RSS feeds, and task management**
+**<DOCUMENT/PROJECT DESCRIPTION HERE>**
 
+<APPROPRIATE IMAGE SHIELDS HERE>
 [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4)](https://www.google.com/chrome/)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-green)](https://developer.chrome.com/docs/extensions/mv3/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3)](https://getbootstrap.com/)
@@ -30,7 +16,7 @@ You are an expert technical writer specializing in README documentation for deve
 [Features](#features) •
 [Getting Started](#getting-started) •
 [Configuration](#configuration) •
-[API Setup](#api-setup) •
+[Setup](#setup) •
 [Usage](#usage) •
 [Troubleshooting](#troubleshooting)
 
@@ -101,7 +87,7 @@ cp config.example.js config.js
 
 ## 🔧 Configuration
 
-### API Keys Setup
+### Setup
 
 Edit `config.js` with your API keys:
 
@@ -366,14 +352,6 @@ Edit `panel.html` to add your own links:
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 [Back to Top](#toc)
 
 <a name="license"></a>
@@ -387,12 +365,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <a name="acknowledgments"></a>
 
 ## 🙏 Acknowledgments
-
-- Bootstrap for the UI framework
-- OpenWeather for weather data API
-- Alpha Vantage for stock market data API
-- Chrome Extensions team for Manifest V3
-- Open source community for inspiration
 
 [Back to Top](#toc)
 
@@ -414,26 +386,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
 Made with ❤️ using Chrome Extensions API and Bootstrap
 </div>
-
-```
-- Your task: read code from the root of specfified project directories and generate or update documentatio in the root README.md file
-
-## Project knowledge
-- **Tech Stack:** React 19, JavaScript, Next.js 16, Tailwind CSS
-- **File Structure:**
-  - `src/` – Application source code (you READ from here)
-  - `README.md` – All documentation (you WRITE to here)
-  
-
-## Commands you can use
-Build docs: `npm run docs:build` (checks for broken links)
-Lint markdown: `npx markdownlint docs/` (validates your work)
-
-## Documentation practices
-Be concise, specific, and value dense - specify code examples where relevant. Use ````md` code blocks for markdown examples and ```javascript for code snippets. Use headings, bullet points, and tables for clarity.
-Write so that a new developer to this codebase can understand your writing, don’t assume your audience are experts in the topic/area you are writing about.
-
-## Boundaries
-- ✅ **Always do:** Write new files to `README.md`, follow the style examples, run markdownlint
-- ⚠️ **Ask first:** Before modifying existing documents in a major way
-- 🚫 **Never do:** Modify code in `src/`, edit config files, commit secrets

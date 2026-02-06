@@ -4,18 +4,18 @@ networks:
 
 services:
   traefik:
-    image: traefik:latest
+    image: traefik:v3.6.7
     container_name: traefik
     pull_policy: always
     command:
-      - "--configFile=/etc/traefik/traefik.yml"
+      - "--configFile=/etc/:traefik/traefik.yml"
     ports:
       - "80:80"
       - "443:443"
       - "8888:8080"
     volumes:
-      - ./traefik/traefik.yml:/etc/traefik/traefik.yml:ro
-      - ./traefik/dynamic:/etc/traefik/dynamic:ro
+      - ./traefik/traefik/traefik.yml:/etc/traefik/traefik.yml:ro
+      - ./traefik/traefik/dynamic:/etc/traefik/dynamic:ro
       - ./traefik/certs:/certs:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
     networks:
@@ -33,7 +33,7 @@ services:
       - integration_network
     volumes:
       - ollama-data:/root/.ollama
-      - /etc/ssl/certs:/etc/ssl/certs
+      - ./certificates:/etc/ssl/certs
 
   ollama-webui:
     image: ghcr.io/open-webui/open-webui:latest
@@ -48,7 +48,7 @@ services:
       - OLLAMA_BASE_URL=http://ollama:11434
     volumes:
       - ollama-webui-data:/app/backend/data
-      - /etc/ssl/certs:/etc/ssl/certs
+      - ./certificates:/etc/ssl/certs
     depends_on:
       - ollama
 
@@ -62,7 +62,7 @@ services:
     networks:
       - integration_network
     depends_on:
-      - postgres
+      - db_pg18
     environment:
       - DB_TYPE=${DB_TYPE}
       - DB_POSTGRESDB_HOST=${DB_POSTGRESDB_HOST}
@@ -83,9 +83,9 @@ services:
       - ./certificates:/opt/custom-certificates
       - ./swagger-html:/swagger-html:rw
 
-  postgres:
+  db_pg18:
     image: pgvector/pgvector:pg18-trixie
-    container_name: postgresdb18
+    container_name: pg18_vector_db
     restart: unless-stopped
     environment:
       - POSTGRES_USER=${DB_POSTGRESDB_USER}
@@ -96,7 +96,7 @@ services:
     networks:
       - integration_network
     volumes:
-      - pgvector-data:/var/lib/postgresql
+      - postgres18-data:/var/lib/postgresql
 
   pgadmin:
     image: dpage/pgadmin4:latest
@@ -110,9 +110,10 @@ services:
     networks:
       - integration_network
     depends_on:
-      - postgres
+      - db_pg18
     volumes:
       - pgadmin-data:/var/lib/pgadmin
+      - ./certificates:/etc/ssl/certs
 
   portainer:
     image: portainer/portainer-ce:lts
@@ -135,14 +136,14 @@ volumes:
     name: ollama_ollama-webui-data
     external: true
   n8n-data:
-    name: n8n_n8n-data
+    name: n8n_workflows_n8n-data
     external: true
-  pgvector-data:
-    name: n8n_pgvector18-data
+  postgres18-data:
+    name: n8n_workflows_postgres18-data
     external: true
   pgadmin-data:
-    name: n8n_pgadmin-data
+    name: n8n_workflows_pgadmin-data
     external: true
   portainer_data:
-    name: portainer_portainer-data
+    name: portainer_data
     external: true

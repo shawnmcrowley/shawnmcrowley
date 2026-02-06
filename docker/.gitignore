@@ -1,3 +1,5 @@
 .env.*
 env
+./traefik/traefik/certs/*
+./certificates
 

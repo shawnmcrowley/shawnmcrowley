@@ -7,7 +7,7 @@ services:
     ports:
       - "5678:5678"
     depends_on:
-      - postgres
+      - db_pg18
     environment:
       - DB_TYPE=${DB_TYPE}
       - DB_POSTGRESDB_HOST=${DB_POSTGRESDB_HOST}
@@ -28,12 +28,12 @@ services:
   
     volumes:
       -  n8n-data:/home/node/.n8n
-      - ./certificates:/opt/custom-certificates
+      - ./etc/ssl/certs:/opt/custom-certificates
       - ./swagger-html:/swagger-html:rw 
 
-  postgres:
+  db_pg18:
     image: pgvector/pgvector:pg18-trixie
-    container_name: postgresdb
+    container_name: pg18_vector_db
     pull_policy: always
     restart: unless-stopped
     environment:
@@ -48,7 +48,7 @@ services:
       - "5432:5432"
 
     volumes:
-      - pgvector18-data:/var/lib/postgresql
+      - postgres18-data:/var/lib/postgresql
 
   pgadmin:
     image: dpage/pgadmin4:latest
@@ -65,13 +65,13 @@ services:
     ports:
       - "5050:80"
     depends_on:
-      - postgres
+      - db_pg18
     volumes:
       - pgadmin-data:/var/lib/pgadmin
 
 volumes:
   n8n-data:
-  pgvector18-data:
+  postgres18-data:
   pgadmin-data:
 networks:
   integration_network:
