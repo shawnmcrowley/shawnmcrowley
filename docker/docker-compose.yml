@@ -62,7 +62,7 @@ services:
     networks:
       - integration_network
     depends_on:
-      - db_pg18
+      - postgres18
     environment:
       - DB_TYPE=${DB_TYPE}
       - DB_POSTGRESDB_HOST=${DB_POSTGRESDB_HOST}
@@ -81,11 +81,11 @@ services:
     volumes:
       - n8n-data:/home/node/.n8n
       - ./certificates:/opt/custom-certificates
-      - ./swagger-html:/swagger-html:rw
+      - /home/scrowley/src/n8n_workflows/swagger-html:/swagger-html:rw
 
-  db_pg18:
+  postgres18:
     image: pgvector/pgvector:pg18-trixie
-    container_name: pg18_vector_db
+    container_name: postgres18
     restart: unless-stopped
     environment:
       - POSTGRES_USER=${DB_POSTGRESDB_USER}
@@ -110,7 +110,7 @@ services:
     networks:
       - integration_network
     depends_on:
-      - db_pg18
+      - postgres18
     volumes:
       - pgadmin-data:/var/lib/pgadmin
       - ./certificates:/etc/ssl/certs
