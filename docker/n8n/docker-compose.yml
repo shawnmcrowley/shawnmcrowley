@@ -7,7 +7,7 @@ services:
     ports:
       - "5678:5678"
     depends_on:
-      - db_pg18
+      - postgres18
     environment:
       - DB_TYPE=${DB_TYPE}
       - DB_POSTGRESDB_HOST=${DB_POSTGRESDB_HOST}
@@ -31,9 +31,9 @@ services:
       - ./etc/ssl/certs:/opt/custom-certificates
       - ./swagger-html:/swagger-html:rw 
 
-  db_pg18:
+  postgres18:
     image: pgvector/pgvector:pg18-trixie
-    container_name: pg18_vector_db
+    container_name: postgres18
     pull_policy: always
     restart: unless-stopped
     environment:
@@ -65,7 +65,7 @@ services:
     ports:
       - "5050:80"
     depends_on:
-      - db_pg18
+      - postgres18
     volumes:
       - pgadmin-data:/var/lib/pgadmin
 
